@@ -1,0 +1,35 @@
+<section id="services" itemscope itemtype="http://scheme.org/WebPage">
+
+  <h1 itemprop="headline">{{ meta.services.title }}}</h1>
+
+  <div class="categories">
+
+    {% for key,category in meta.services.categories %}
+
+      <div class="category {{ key }}">
+        <span class="headline">{{ category.title }}</span>
+        <ul itemscope itemtype="http://schema.org/ItemList">
+        {% for el in category.elems %}
+          <li itemprop="itemListElement">{{ el }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+
+    {% endfor %}
+
+  </div>
+
+  <div class="external-logos">
+    
+    {% for logo in meta.services.logos %}
+    
+      <div class="logo" itemscope itemtype="http://schema.org/ImageGallery">
+        <img class="sw" src="{{ logo.image }}_sw.png" alt="{{ logo.name }}">
+        <img class="cl" src="{{ logo.image }}_cl.png" alt="{{ logo.name }}">
+      </div>
+
+    {% endfor %}
+
+  </div>
+
+</section>

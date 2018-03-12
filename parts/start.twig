@@ -1,0 +1,16 @@
+<section id="start" itemscope itemtype="http://schema.org/WebPage">
+
+  <img class="img-full" src="{{ meta.start.img }}" alt="{{ site_title }}" itemprop="primaryImageOfPage">
+  <h1 itemprop="headline">{{ meta.start.title }}</h1>
+  <h2 itemprop="alternativeHeadline">{{ meta.start.subtitle }}</h2>
+  <a class="emergency-number" href="tel:{{ meta.contact.emergency_number }}">{{ meta.start.emergency_label }}}: {{ meta.emergency_number }}</a>
+
+  <a class="next-arrow" href="
+    {% if meta.about is defined %}#about{% endif %}
+    {% elseif meta.deals is defined %}#deals{% endif %}
+    {% elseif meta.services is defined %}#services{% endif %}
+    {% elseif meta.contact is defined %}#contact{% endif %}
+    {% elseif meta.custom is defined %}#custom{% endif %}
+  "></a>
+
+</section>

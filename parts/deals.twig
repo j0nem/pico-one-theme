@@ -1,0 +1,14 @@
+<section id="deals" itemscope itemtype="http://scheme.org/WebPage">
+
+  <h1 itemprop="headline">{{ meta.deals.title }}}</h1>
+
+  {% for deal in meta.deals %}
+  
+    <div class="deal {{ deal.icon }}" itemscope itemtype="http://schema.org/Offer">
+      <div class="reduced-by">{{ deal.reduced }}</div>
+      <div class="description" itemprop="description">{{ deal.description }}</div>
+    </div>
+
+  {% endfor %}
+
+</section>

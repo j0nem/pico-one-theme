@@ -1,0 +1,27 @@
+{# General Meta Tags #}
+<meta charset="utf-8">
+<meta name="robots" content="{{ meta.robots }}}">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{{ meta.title }} - {{ site_title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ pages.index.meta.description|striptags }}" />
+
+{# OpenGraph #}
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="{{ site_title }}"/>
+<meta property="og:image" content="{{ meta.image }}" />
+<meta property="og:url" content="{{ base_url }}"/>
+<meta property="og:description" content="{{ pages.index.meta.description|striptags }}"/>
+
+{# Twitter #}
+<meta name="twitter:card" content="summary" />
+
+{# Favicon in Website Root #}
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+{# External Includes #}
+<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather" rel="stylesheet">
+<link href="{{ theme_url }}/css/style.css" rel="stylesheet">
+<script src="{{ theme_url }}/js/modernizr.js"></script>

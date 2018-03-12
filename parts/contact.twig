@@ -1,0 +1,31 @@
+{# TODO: schema.org labels #}
+
+<section id="contact" itemscope itemtype="http://schema.org/WebPage">
+
+  <h1 itemprop="headline">{{ meta.contact.title }}</h1>
+
+  <div class="location">
+    <span class="street">{{ meta.contact.street }}</span>
+    <span class="city">{{ meta.contact.city}}</span>
+  </div>
+  <div class="opening-hours">
+    <span class="label">{{ meta.contact.opening_label }}</span>
+    <div class="hours1">
+      <span class="sel">{{ meta.contact.opening.sel1 }}</span>
+      <span class="val">{{ meta.contact.opening.val1 }}</span>
+    </div>
+    <div class="hours2">
+      <span class="sel">{{ meta.contact.opening.sel2 }}</span>
+      <span class="val">{{ meta.contact.opening.val2 }}</span>
+    </div>
+  </div>
+  <div class="email">
+    <a href="mailto:{{ meta.contact.email }}">{{ meta.contact.email }}</a>
+  </div>
+
+</section>
+<section id="map">
+
+  {# TODO: GMaps Integration #}
+
+</section>

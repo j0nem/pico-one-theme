@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="{{ pages.index.meta.lang }}" class="no-js">
+
+  <head>
+    {% include "parts/head.twig" %}
+  </head>
+  
+  <body id="top" itemscope itemtype="http://schema.org/WebSite">
+
+    {% if 'header' in meta.uses %}{% include "parts/header.twig" %}{% endif %}
+    
+    <main>
+
+      {% if 'go_back' in meta.uses %}{% include "parts/go_back.twig" %}{% endif %}
+      {% if meta.start is defined %}{% include "parts/start.twig" %}{% endif %}
+      {% if meta.about is defined %}{% include "parts/about.twig" %}{% endif %}
+      {% if meta.deals is defined %}{% include "parts/deals.twig" %}{% endif %}
+      {% if meta.services is defined %}{% include "parts/services.twig" %}{% endif %}
+      {% if meta.contact is defined %}{% include "parts/contact.twig" %}{% endif %}
+      {% if 'custom' in meta.uses %}{% include "parts/custom.twig" %}{% endif %}
+
+    </main>
+
+    {% if 'footer' in meta.uses %}{% include "parts/footer.twig" %}{% endif %}
+    
+  </body>
+
+</html>
