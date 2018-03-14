@@ -4,12 +4,12 @@
 
   <div class="categories">
 
-    {% for key,category in meta.services.categories %}
+    {% for category in meta.services.categories %}
 
-      <div class="category {{ key }}">
+      <div class="category {{ category.icon }}">
         <span class="headline">{{ category.title }}</span>
         <ul itemscope itemtype="http://schema.org/ItemList">
-        {% for el in category.elems %}
+        {% for el in category.items %}
           <li itemprop="itemListElement">{{ el }}</li>
         {% endfor %}
         </ul>
@@ -24,8 +24,8 @@
     {% for logo in meta.services.logos %}
     
       <div class="logo" itemscope itemtype="http://schema.org/ImageGallery">
-        <img class="sw" src="{{ logo.image }}_sw.png" alt="{{ logo.name }}">
-        <img class="cl" src="{{ logo.image }}_cl.png" alt="{{ logo.name }}">
+        <img class="sw" src="assets/{{ logo.image }}_sw.png" alt="{{ logo.name }}">
+        <img class="cl" src="assets/{{ logo.image }}_cl.png" alt="{{ logo.name }}">
       </div>
 
     {% endfor %}
