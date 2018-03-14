@@ -1,7 +1,7 @@
 Pico "One" Theme
 ==============
 
-Pico theme for a one-page website. Currently **work-in-progress**.
+Pico theme for a one-page website. Currently **work-in-progress** and **not working yet**.
 
 **Features:**
 
@@ -35,8 +35,7 @@ General Params:
 - `robots` (str) The content of `<meta name="robots">`.
 - `title` (str) The title of the site.
 - `description` (str) The content of `<meta name="description">`.
-- `image` (str) The content of `<meta property="og:image">`.
-- `logo` (str) The URL to a logo file. 
+- `image` (str) The content of `<meta property="og:image">`. 
 
 Section-specific Params:
 
@@ -47,7 +46,6 @@ Section-specific Params:
     - `img` (str) - URL to the background image file.
     - `title` (str) - Title shown in the start section
     - `subtitle` (str) - Subtitle shown in the start section
-    - `emergency_label` (str) - Label for the emergency tel number shown in the start section (the number itself is defined in `meta.contact`)
 
 - `about` (array):
     - `title` (str) - The title of the about page
