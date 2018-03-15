@@ -7,7 +7,7 @@ Pico theme for a one-page website. Currently **work-in-progress** and **not work
 
 - Predefined Sections of the page, handled via meta YAML code
 - Add a "custom" section to the page using markdown
-- SEO-friendly (schema.org references, OpenGraph, meta tags...)
+- SEO-friendly (Microdata, Meta tags (e.g. OpenGraph), JSON-LD according to Google's standards)
 
 How to use
 ----------
