@@ -19,11 +19,11 @@
 
   </div>
 
-  <div class="external-logos">
+  <div class="external-logos" itemscope itemtype="http://schema.org/ImageGallery">
     
     {% for logo in meta.services.logos %}
     
-      <div class="logo" itemscope itemtype="http://schema.org/ImageGallery">
+      <div class="logo" itemscope itemtype="http://schema.org/ImageObject">
         <img class="sw" src="assets/{{ logo.image }}_sw.png" alt="{{ logo.name }}">
         <img class="cl" src="assets/{{ logo.image }}_cl.png" alt="{{ logo.name }}">
       </div>
