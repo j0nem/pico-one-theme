@@ -24,7 +24,7 @@ How to use
 - `footer` - Copyright and footer links, e.g. to another page
 - `custom` - Add your own markdown content
 
-The sections `start`, `about`, `deals`, `services`, `contact`, `header`, `footer` are shown if the corrosponding parameter is set. The sections `go_back` and `custom` are shown if they are in the array `meta.uses`.
+The sections `start`, `about`, `deals`, `services`, `contact`, `header`, `footer`, `go_back` are shown if the corrosponding parameter is set. The custum content is shown if the parameter `custom` is set to `true`.
 
 **Used Meta Params:**
 
@@ -94,6 +94,9 @@ Section-specific Params:
 - `footer` (array):
     - `text` (str): General text (e.g. Copyright remark)
     - `links` (array of str) Internal page links to show up in the footer
+
+- `go_back` (array):
+    - `label` (str): Label for the "Go back" link
 
 Internal notes:
 -------------------
