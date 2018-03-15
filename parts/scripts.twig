@@ -1,0 +1,31 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "{{ meta.title }}",
+        "url": "{{ base_url }}",
+        "sameAs": [
+            "{{ meta.facebook }}"
+        ],
+        "contactPoint": [
+            {
+                "telephone": "{{ meta.contact.phone1.number_real }}",
+                "contactType": "emergency"
+            },
+            {
+                "telephone": "{{ meta.contact.phone2.number_real }}",
+                "contactType": "customer support"
+            }
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{ meta.contact.street }}",
+            "postalCode": "{{ meta.contact.postal }}",
+            "addressLocality": "{{ meta.contact.city }}",
+            "addressCountry": "{{ meta.contact.country }}"
+        },
+        "email": "{{ meta.contact.email }}",
+        "faxNumber": "{{ meta.contact.fax.number_real }}",
+        "logo": "{{ base_url }}/{{ meta.header.logo }}",
+    }
+</script>
