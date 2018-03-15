@@ -1,8 +1,8 @@
 <section id="deals" itemscope itemtype="http://scheme.org/WebPage">
 
-  <h1 itemprop="headline">{{ meta.deals.title }}}</h1>
+  <h1 itemprop="headline">{{ meta.deals.title }}</h1>
 
-  {% for deal in meta.deals %}
+  {% for deal in meta.deals.items %}
   
     <div class="deal {{ deal.icon }}" itemscope itemtype="http://schema.org/Offer">
       <div class="reduced-by">{{ deal.reduced }}</div>
