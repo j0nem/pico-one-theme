@@ -93,7 +93,9 @@ Section-specific Params:
 
 - `footer` (array):
     - `text` (str): General text (e.g. Copyright remark)
-    - `links` (array of str) Internal page links to show up in the footer
+    - `links` (array) Internal page links to show up in the footer
+        - `label` (str) Label of the link
+        - `link` (str) Link, relative to base_url
 
 - `go_back` (array):
     - `label` (str): Label for the "Go back" link
