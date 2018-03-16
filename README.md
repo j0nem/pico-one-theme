@@ -64,7 +64,7 @@ Section-specific Params:
     - `title` (str) - The title of the services page
     - `categories` (array) - The services/products ordered by categories
         - `title` (str) - The title of the category
-        - `icon` (str) - Name of the category icon
+        - `icon` (str) - Path to the category icon
         - `items` (array of str) - Products/services of the category
     - `logos` (array) - Logos of cooperation/customer companies
         - `image` (str) - Name of the image file in `assets` (`<image>_sw.png` and `<image>_cl.png` are needed)
