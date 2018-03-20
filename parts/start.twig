@@ -1,10 +1,10 @@
 <section id="start" itemscope itemtype="http://schema.org/WebPage">
-
-  <img class="img-full" src="{{ meta.start.img }}" alt="{{ site_title }}" itemprop="primaryImageOfPage">
-  <h1 itemprop="headline">{{ meta.start.title }}</h1>
-  <h2 itemprop="alternativeHeadline">{{ meta.start.subtitle }}</h2>
-  <a class="emergency-number" href="tel:{{ meta.contact.phone1.number_real }}">{{ meta.contact.phone1.label }}: {{ meta.contact.phone1.number_show }}</a>
-
-  <a class="next-arrow" href="{% if meta.about is defined %}#about{% elseif meta.deals is defined %}#deals{% elseif meta.services is defined %}#services{% elseif meta.contact is defined %}#contact{% elseif meta.custom is defined %}#custom{% endif %}"></a>
-
+  <div class="content">
+    <div class="headline-container">
+      <h1 itemprop="headline">{{ meta.start.title }}</h1>
+      <h2 itemprop="alternativeHeadline">{{ meta.start.subtitle }}</h2>
+      <a class="emergency-number" href="tel:{{ meta.contact.phone1.number_real }}">{{ meta.contact.phone1.label }}: {{ meta.contact.phone1.number_show }}</a>
+    </div>
+      <a class="next-arrow" href="{% if meta.about is defined %}#about{% elseif meta.deals is defined %}#deals{% elseif meta.services is defined %}#services{% elseif meta.contact is defined %}#contact{% elseif meta.custom is defined %}#custom{% endif %}"></a>
+  </div>
 </section>
