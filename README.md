@@ -43,9 +43,9 @@ Section-specific Params:
     - `logo` (str) URL to the logo image file.
 
 - `start` (array)
-    - `img` (str) - URL to the background image file.
     - `title` (str) - Title shown in the start section
     - `subtitle` (str) - Subtitle shown in the start section
+    - Background image **must be** `assets/background.jpg`.
 
 - `about` (array):
     - `title` (str) - The title of the about page
