@@ -36,4 +36,21 @@ function setMenuMode() {
     } else {
         $('header').removeClass('small');
     }
+    //mark the section menu, which is currently mainly in viewport
+    console.clear();
+    $('header nav a').each(function(i) {
+        section = $(this.hash);
+        
+        elTop = (section.offset().top - $(window).scrollTop());
+        elBottom = section.offset().top - $(window).scrollTop() + section.height();
+        windowMiddle = $(window).height()/2;
+        
+        if (elBottom > windowMiddle && elTop <= windowMiddle) {
+            $(this).addClass('active');
+        }
+        else {
+            $(this).removeClass('active');
+        }
+    });
+
 }

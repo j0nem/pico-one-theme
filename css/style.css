@@ -37,12 +37,16 @@ header.small img {
 header.small nav {
     line-height:80px;
 }
-header nav a, header nav span {
+header nav a{
     font-variant:small-caps;
     font-size:21pt;
     text-decoration:none;
     color:#272727;
     margin-left:25px;
+    transition: color 0.4s;
+}
+header nav a.active {
+    color: #c1322c;
 }
 section {
     /* To fix navigation overlapping problem*/
