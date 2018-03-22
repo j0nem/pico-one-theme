@@ -48,6 +48,7 @@ section {
     /* To fix navigation overlapping problem*/
     padding-top:80px;
     margin-top:-80px;
+    outline:none;
 }
 #main {
     height:100vh;
@@ -109,4 +110,42 @@ section {
 }
 #start .emergency-number:hover{
     background-color:#962520;
+}
+
+/* --- About section --- */
+
+#about {
+    padding:130px 30px;
+    padding-bottom:30px;
+    text-align:center;
+}
+#about .main-text {
+    display:inline-block;
+    width: 65%;
+    vertical-align:top;
+    max-width:900px;
+    text-align:left;
+}
+#about h1, #deals h1, #services h1, #contact h1{
+    font-weight: 300;
+    margin-top:0;
+}
+#about p {
+    font-size:15pt;
+}
+#about .image-gallery {
+    display:inline-block;
+    width:25%;
+    margin-right:3%;
+}
+#about .image-gallery img.big {
+    width: 90%;
+    max-width:415px;
+}
+#about .image-gallery img.small {
+    margin-right:3.5%;
+    margin-left:3.5%;
+    width:25%;
+    max-width:112px;
+    margin-top:7%;
 }
