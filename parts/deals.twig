@@ -1,14 +1,15 @@
 <section id="deals" itemscope itemtype="http://scheme.org/WebPage">
+  <div class="inside">
+    <h1 itemprop="headline">{{ meta.deals.title }}</h1>
 
-  <h1 itemprop="headline">{{ meta.deals.title }}</h1>
+    {% for deal in meta.deals.items %}
 
-  {% for deal in meta.deals.items %}
-  
-    <div class="deal {{ deal.icon }}" itemscope itemtype="http://schema.org/Offer">
-      <div class="reduced-by">{{ deal.reduced }}</div>
-      <div class="description" itemprop="description">{{ deal.description }}</div>
-    </div>
+      <div class="deal {{ deal.icon }}" itemscope itemtype="http://schema.org/Offer">
+        <div class="reduced-by">{{ deal.reduced }}</div>
+        <div class="description" itemprop="description">{{ deal.description }}</div>
+      </div>
 
-  {% endfor %}
+    {% endfor %}
+  </div>
 
 </section>

@@ -45,12 +45,11 @@ function setMenuMode() {
         elBottom = section.offset().top - $(window).scrollTop() + section.height();
         windowMiddle = $(window).height()/2;
         
-        if (elBottom > windowMiddle && elTop <= windowMiddle) {
+        if (elBottom >= windowMiddle && elTop <= windowMiddle) {
             $(this).addClass('active');
         }
         else {
             $(this).removeClass('active');
         }
     });
-
 }

@@ -1,36 +1,42 @@
 <section id="services" itemscope itemtype="http://scheme.org/WebPage">
 
-  <h1 itemprop="headline">{{ meta.services.title }}</h1>
+  <div class="inside">
 
-  <div class="categories">
+    <h1 itemprop="headline">{{ meta.services.title }}</h1>
 
-    {% for key,category in meta.services.categories %}
+    <div class="categories">
 
-      <div class="category {{ key }}">
-        <img src="{{ category.icon }}" width="50px">
-        <span class="headline">{{ category.title }}</span>
-        <ul itemscope itemtype="http://schema.org/ItemList">
-        {% for el in category.items %}
-          <li itemprop="itemListElement">{{ el }}</li>
-        {% endfor %}
-        </ul>
-      </div>
+      {% for key,category in meta.services.categories %}
 
-    {% endfor %}
+        <div class="category {{ key }}">
+          <img src="{{ category.icon }}" width="50px">
+          <span class="headline">{{ category.title }}</span>
+          <ul itemscope itemtype="http://schema.org/ItemList">
+          {% for el in category.items %}
+            <li itemprop="itemListElement">{{ el }}</li>
+          {% endfor %}
+          </ul>
+        </div>
 
-  </div>
+      {% endfor %}
 
-  <div class="external-logos" itemscope itemtype="http://schema.org/ImageGallery">
+    </div>
+
+    <div class="external-logos" itemscope itemtype="http://schema.org/ImageGallery">
+      
+      {% for logo in meta.services.logos %}
+      
+        <a href="{{ logo.link }}" target="_blank">
+          <div class="logo" itemscope itemtype="http://schema.org/ImageObject">
+            <img class="sw" src="assets/{{ logo.image }}_sw.png" alt="{{ logo.name }}">
+            <img class="cl" src="assets/{{ logo.image }}_cl.png" alt="{{ logo.name }}">
+          </div>
+        </a>
+
+      {% endfor %}
+
+    </div>
     
-    {% for logo in meta.services.logos %}
-    
-      <div class="logo" itemscope itemtype="http://schema.org/ImageObject">
-        <img class="sw" src="assets/{{ logo.image }}_sw.png" alt="{{ logo.name }}">
-        <img class="cl" src="assets/{{ logo.image }}_cl.png" alt="{{ logo.name }}">
-      </div>
-
-    {% endfor %}
-
   </div>
 
 </section>
