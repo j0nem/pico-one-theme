@@ -96,7 +96,7 @@ Section-specific Params:
         - `number_real` (tel) - Fax number (without spaces, international format)
 
 - `footer` (array):
-    - `text` (str): General text (e.g. Copyright remark)
+    - `copyright_text` (str): Text after `&copy [YEAR]`, e.g. the name of the company
     - `links` (array) Internal page links to show up in the footer
         - `label` (str) Label of the link
         - `link` (str) Link, relative to base_url

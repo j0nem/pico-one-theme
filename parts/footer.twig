@@ -1,7 +1,7 @@
 <footer itemscope itemtype="http://schema.org/WPFooter">
 
     <div class="footer-text">
-        {{ meta.footer.text }}
+        &copy; {{ 'now'|date('Y') }} {{ meta.footer.copyright_text }}
     </div>
     <nav class="footer" itemscope itemtype="http://schema.org/SiteNavigationElement">
         {% for elem in meta.footer.links %}
