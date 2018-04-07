@@ -30,12 +30,13 @@ The sections `start`, `about`, `deals`, `services`, `contact`, `header`, `footer
 
 General Params:
 
-- `lang` - (str) Language of the website
-- `uses` - (array) Defines which additional elements to show. Can include `go_back`,`custom`.
-- `robots` (str) The content of `<meta name="robots">`.
 - `title` (str) The title of the site.
+- `lang` - (str) Language of the website
+- `robots` (str) The content of `<meta name="robots">`.
 - `description` (str) The content of `<meta name="description">`.
-- `image` (str) The content of `<meta property="og:image">`. 
+- `image` (str) The content of `<meta property="og:image">`.
+- `custom` (bool) Set to true if you want to show markdown content in extra section 
+- `facebook` (str) Link to a facebook page which is included in the JSON-LD markup.
 
 Section-specific Params:
 
@@ -68,6 +69,7 @@ Section-specific Params:
     - `logos` (array) - Logos of cooperation/customer companies
         - `image` (str) - Name of the image file in `assets` (`<image>_sw.png` and `<image>_cl.png` are needed)
         - `name` (str) - Name of the company (`alt` attribute)
+        - `link` (str) - Link that is placed on logo image
 
 - `contact` (array):
     - `title` (str) - The title of the contact page.
@@ -82,13 +84,16 @@ Section-specific Params:
         - `val2` (str) - second value
     - `phone1` (array) - Main phone number, also shown on start page!
         - `label` (str) - Label of main phone number
-        - `number` (str) - Main phone number
+        - `number_show` (str) - Main phone number (how it should be displayed)
+        - `number_real` (tel) - Main phone number (without spaces, international format)
     - `phone2` (str) - Second phone number
         - `label` (str) - Label of second phone number
-        - `number` (str) - Main second number
+        - `number_show` (str) - Second phone number (how it should be displayed)
+        - `number_real` (tel) - Second phone number (without spaces, international format)
     - `fax` (str) - Fax number
         - `label` (str) - Label of fax number
-        - `number` (str) - Fax number
+        - `number_show` (str) - Fax number (how it should be displayed)
+        - `number_real` (tel) - Fax number (without spaces, international format)
 
 - `footer` (array):
     - `text` (str): General text (e.g. Copyright remark)
