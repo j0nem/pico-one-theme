@@ -23,7 +23,7 @@ header .nav-container {
     text-align:center;
 }
 header nav {
-    font-size: 21pt;
+    font-size: 24pt;
     display:inline-block;
     position:relative;
     padding-top:25px;
@@ -135,10 +135,10 @@ section .inside {
 }
 #start .number-container {
     position:absolute;
-    top: 80%;
+    top: 82%;
     left:50%;
     margin-right:-50%;
-    transform: translate(-50%,-80%);
+    transform: translate(-50%,-82%);
 }
 #start .emergency-number {
     position:relative;
@@ -147,7 +147,7 @@ section .inside {
     padding:10px 30px;
     padding-left:60px;
     text-decoration:none;
-    font-size:20pt;
+    font-size:24pt;
     color:#fff;
     background: url('../assets/phone.png') #c9352c 12px center/32px no-repeat;
     transition: background-color 0.2s;
@@ -305,4 +305,5 @@ footer nav {
 footer nav a{
     color: #c9352c;
     text-decoration:none;
+    margin-right: 10px;
 }
