@@ -243,7 +243,7 @@ section .inside {
 }
 #services .category img {
     display:inline-block;
-    width:7%;
+    width:32px;
     vertical-align:top;
 }
 #services .category li {
