@@ -2,9 +2,22 @@
 
   <div class="inside">
     <div class="image-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-      <img class="big" src="{{ meta.about.big_img }}" itemscope itemtype="http://schema.org/ImageObject"><br />
-      {% for image in meta.about.more_img %}
-        <img class="small" src="{{ image }}" itemscope itemtype="http://schema.org/ImageObject">
+      
+      <a href="#img-big">
+        <img class="big" src="{{ meta.about.big_img }}" itemscope itemtype="http://schema.org/ImageObject"><br />
+      </a>
+      <a href="#_" class="lightbox" id="img-big">
+        <img src="{{ meta.about.big_img }}" itemscope itemtype="http://schema.org/ImageObject">
+      </a>
+
+      {% for id, image in meta.about.more_img %}
+        
+        <a href="#img-s{{ id }}">
+          <img class="small" src="{{ image }}" itemscope itemtype="http://schema.org/ImageObject">
+        </a>
+        <a href="#_" class="lightbox" id="img-s{{ id }}">
+          <img src="{{ image }}" itemscope itemtype="http://schema.org/ImageObject">
+        </a>
       {% endfor %}
     </div>
 

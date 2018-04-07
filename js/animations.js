@@ -1,7 +1,7 @@
 // Smooth scrolling with focus management
 // source: https://css-tricks.com/smooth-scrolling-accessibility/
 
-$('a[href*="#"]').not('[href="#"]').click(function(e) {
+$('a[href*="#"]').not('[href="#"]').not('[href*="#img"]').click(function(e) {
     target = $(this.hash);
     if (target.length) {
         e.preventDefault();
@@ -43,7 +43,7 @@ function setMenuMode() {
         
         elTop = (section.offset().top - $(window).scrollTop());
         elBottom = section.offset().top - $(window).scrollTop() + section.height();
-        windowMiddle = $(window).height()/2;
+        windowMiddle = $(window).height()/2 - 80; //header height = 80px
         
         if (elBottom >= windowMiddle && elTop <= windowMiddle) {
             $(this).addClass('active');

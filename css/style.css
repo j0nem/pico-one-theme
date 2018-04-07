@@ -57,6 +57,7 @@ section {
 section .inside {
     padding:40px 30px;
     text-align:center;
+    min-height: 52vh;
 }
 #main {
     height:100vh;
@@ -128,29 +129,53 @@ section .inside {
     vertical-align:top;
     max-width:900px;
     text-align:left;
+    font-size:14pt;
 }
 #about h1, #deals h1, #services h1, #contact h1{
     font-weight: 300;
     margin-top:0;
-}
-#about p {
-    font-size:15pt;
 }
 #about .image-gallery {
     display:inline-block;
     width:25%;
     margin-right:3%;
 }
+#about .image-gallery a {
+    text-decoration:none;
+}
 #about .image-gallery img.big {
     width: 90%;
-    max-width:415px;
+    max-width:370px;
 }
 #about .image-gallery img.small {
     margin-right:3.5%;
     margin-left:3.5%;
     width:25%;
-    max-width:112px;
+    max-width:100px;
     margin-top:7%;
+}
+
+/* Lightbox (copyright by Gregory Schier, source https://codepen.io/gschier/pen/HCoqh) */
+
+.lightbox {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+.lightbox img {
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+.lightbox:target {
+	outline: none;
+	display: block;
 }
 
 /* --- Deals section --- */
@@ -174,7 +199,7 @@ section .inside {
 }
 #services .category span {
     font-family: 'Merriweather', 'Times New Roman', serif;
-    font-size:15pt;
+    font-size:17pt;
     margin-left: 10px;
     display:inline-block;
     max-width:85%;
@@ -186,7 +211,7 @@ section .inside {
     vertical-align:top;
 }
 #services .category li {
-    font-size:13pt;
+    font-size:14pt;
 }
 #services .external-logos a {
     text-decoration:none;
