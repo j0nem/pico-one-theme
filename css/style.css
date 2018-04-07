@@ -116,22 +116,21 @@ section .inside {
 }
 #start .image-container {
     position:absolute;
-    top: 25%;
+    top: 33%;
     left:50%;
     margin-right:-50%;
-    transform: translate(-50%,-25%);
-    width: 50%;
+    transform: translate(-50%,-33%);
+    width: 55%;
     animation-name: flying-airplane;
     animation-duration: 4s;
 }
 @keyframes flying-airplane {
-    from { left: -25% }
+    from { left: -40% }
     to { left: 50% }
 }
 #start img.logo {
-    margin: 10vh 0;
     width:100%;
-    max-width: 950px;
+    max-width: 1050px;
 }
 #start .number-container {
     position:absolute;
