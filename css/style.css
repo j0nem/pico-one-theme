@@ -1,5 +1,6 @@
 body {
     font-family: 'Lato', Arial, sans-serif;
+    font-size: 14pt;
 }
 /* Header general*/
 header{
@@ -93,7 +94,7 @@ section {
 section .inside {
     padding:40px 30px;
     text-align:center;
-    min-height: 52vh;
+    min-height: calc(50vh - 80px);
 }
 #main {
     height:100vh;
@@ -163,7 +164,6 @@ section .inside {
     vertical-align:top;
     max-width:900px;
     text-align:left;
-    font-size:14pt;
 }
 #about h1, #deals h1, #services h1, #contact h1{
     font-weight: 300;
@@ -220,6 +220,35 @@ section .inside {
     background: #c9352c;
     color: #fff;
 }
+#deals .deals-wrapper {
+    margin-top: 40px;
+}
+#deals .deal {
+    display:inline-block;
+    width: 29%;
+    text-align:center;
+    vertical-align:top;
+    margin-right:1%;
+}
+#deals .deal .icon-wrapper {
+    width:120px;
+    height:120px;
+    border: 2px solid #fff;
+    border-radius: 110px;
+    display:inline-block;
+}
+#deals .deal img.icon {
+    height:60px;
+    padding:28px 0;
+}
+#deals .deal .reduced-by {
+    margin: 30px auto;
+    padding: 10px 15px;
+    background: #fff;
+    color: #c9352c;
+    width:90px;
+    font-size: 17pt;
+}
 
 /* --- Services section --- */
 
@@ -245,9 +274,6 @@ section .inside {
     display:inline-block;
     width:32px;
     vertical-align:top;
-}
-#services .category li {
-    font-size:14pt;
 }
 #services .external-logos a {
     text-decoration:none;
