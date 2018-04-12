@@ -39,6 +39,9 @@ header nav a{
     margin-left:25px;
     transition: color 0.4s;
 }
+header nav a:hover {
+    color: #727272;
+}
 header nav a:first-child {
     margin-left:0;
 }
@@ -153,7 +156,7 @@ section .inside {
     transition: background-color 0.2s;
 }
 #start .emergency-number:hover{
-    background-color:#c9352c;
+    background-color:#98312b;
 }
 
 /* --- About section --- */
