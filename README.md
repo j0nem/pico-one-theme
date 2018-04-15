@@ -80,7 +80,7 @@ Section-specific Params:
     - `street` (str) - The street of the company.
     - `city` (str) - The city of the company.
     - `email` (str) - Email address of the company.
-    - `use-form` (bln) - True if you want to include a contact form (requires manual installation of `p01-contact`!)
+    - `use_form` (bln) - True if you want to include a contact form (requires manual installation of `p01-contact`!)
     - `opening_label` (str) - Label for the opening hours.
     - `opening` (array) - max. two definitions of opening hours
         - `sel1` (str) - first selector (e.g. mon-fri)

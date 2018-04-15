@@ -35,11 +35,13 @@
       <a href="#lb-contact">Zum Kontaktformular</a>
     </div>
   </div>
-  <div class="lightbox" id="lb-contact">
-    <link rel="stylesheet" href="../../assets/contact.css">
-    <a href="#_" class="close">X</a>
-    {{ contact() }}
-  </div>
+  {% if meta.contact.use_form %}
+    <div class="lightbox" id="lb-contact">
+      <link rel="stylesheet" href="../../assets/contact.css">
+      <a href="#_" class="close">X</a>
+      {{ contact() }}
+    </div>
+  {% endif %}
 
   <div class="map">
 
