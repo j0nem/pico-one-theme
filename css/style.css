@@ -442,3 +442,35 @@ footer nav a{
 footer nav a:hover {
     border-color: #c9352c;
 }
+
+/* --- Custom section --- */
+
+.go-back {
+    text-align:center;
+    margin: 40px 0;
+}
+.go-back a{
+    color: #fff;
+    background: #194871;
+    padding: 7px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.go-back a:hover {
+    background: #1a5a90;
+}
+#custom .inside{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 0;
+    text-align: left;
+    margin-bottom: 40px;
+}
+#custom h1 {
+    margin-bottom: 40px;
+    padding-bottom: 13px;
+    border-bottom: 3px solid #194871;
+    color: #194871;
+    text-align:center;
+}
