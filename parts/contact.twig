@@ -49,16 +49,17 @@
       </div>
     </div>
   {% endif %}
+  {% if meta.contact.gmaps_api_key %}
+    <div class="map">
 
-  <div class="map">
+      <iframe
+        height="350"
+        frameborder="0" style="border:0"
+        allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?key={{ meta.contact.gmaps_api_key }}
+          &q={{ meta.title|url_encode }}+{{ meta.contact.street|url_encode }}+{{ meta.contact.city|url_encode }}" allowfullscreen>
+      </iframe>
 
-    <iframe
-      height="350"
-      frameborder="0" style="border:0"
-      allowfullscreen
-      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBgFikcpLHG9puX7Bu2pZ4yFu14geFozOo
-        &q={{ meta.title|url_encode }}+{{ meta.contact.street|url_encode }}+{{ meta.contact.city|url_encode }}" allowfullscreen>
-    </iframe>
-
-  </div>
+    </div>
+  {% endif %}
 </section>
