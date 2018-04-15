@@ -27,7 +27,7 @@ How to use
 
 The sections `start`, `about`, `deals`, `services`, `contact`, `header`, `footer`, `go_back` are shown if the corrosponding parameter is set. The custom content is shown if the parameter `custom` is set to `true`.
 
-If you want to use `p01-contact` you may have to place a symlink from `assets/contact.css` to `plugins/PicoContact/style.css`, because Pico CMS restricts public access to `/plugins` by default.
+If you want to use `p01-contact` you may have to place a symlink from `assets/contact.css` to `plugins/PicoContact/style.css`, because Pico CMS restricts public access to the folder `plugins` by default.
 
 `assets/contact` is automatically included by this theme when using the contact form.
 
