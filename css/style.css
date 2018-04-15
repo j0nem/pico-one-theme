@@ -200,11 +200,12 @@ section .inside {
     z-index: 999;
     width: 100%;
     height: 100%;
-    line-height:100vh;
+    /*line-height:100vh;*/
     text-align: center;
     top: 0;
     left: 0;
     background: #000000cc;
+    overflow-y: auto;
 }
 .lightbox img {
     max-width: 90%;
@@ -316,6 +317,48 @@ section .inside {
     text-decoration:none;
 }
 
+
+/* Contact Form */
+
+#p01-contact1 {
+    background: #f9f9f9;
+    color:#000;
+    padding: 20px;
+    text-align: left;
+}
+#lb-contact label{
+    margin-bottom: 10px;
+}
+#lb-contact input:focus, #lb-contact textarea:focus {
+    box-shadow: none;
+    border-color: #c9352c;
+}
+#lb-contact .required label:after {
+    color: #c9352c;
+}
+#lb-contact input[type=submit] {
+    background: #c9352c;
+    width: 50%;
+}
+#lb-contact input[type=submit]:hover{
+    background: #b13028;
+    cursor:pointer;
+}
+#lb-contact input[type=submit]:disabled {
+    background: #dca6a8;
+}
+#lb-contact a.close {
+    background: #c9352c;
+    width: 32px;
+    height: 32px;
+    color: #fff;
+    line-height: 32px;
+    border-radius: 17px;
+    position: relative;
+    display: inline-block;
+    top: 36px;
+    right: -260px;
+}
 /* --- Footer --- */
 footer {
     background: #313131;
@@ -334,4 +377,9 @@ footer nav a{
     color: #c9352c;
     text-decoration:none;
     margin-right: 10px;
+    border-bottom: 1px solid transparent;
+    transition: border 0.3s;
+}
+footer nav a:hover {
+    border-color: #c9352c;
 }

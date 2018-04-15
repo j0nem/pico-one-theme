@@ -32,7 +32,13 @@
       </div>
     <div class="email">
       <a href="mailto:{{ meta.contact.email }}">{{ meta.contact.email }}</a>
+      <a href="#lb-contact">Zum Kontaktformular</a>
     </div>
+  </div>
+  <div class="lightbox" id="lb-contact">
+    <link rel="stylesheet" href="../../assets/contact.css">
+    <a href="#_" class="close">X</a>
+    {{ contact() }}
   </div>
 
   <div class="map">
