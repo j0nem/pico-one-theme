@@ -8,6 +8,7 @@ Pico theme for a one-page website. Currently **work-in-progress** and **not work
 - Predefined Sections of the page, handled via meta YAML code
 - Add a "custom" section to the page using markdown
 - SEO-friendly (Microdata, Meta tags (e.g. OpenGraph), JSON-LD according to Google's standards)
+- Supports a contact form via external [`p01-contact`](https://github.com/nliautaud/p01contact) plugin
 
 How to use
 ----------
@@ -25,6 +26,10 @@ How to use
 - `custom` - Add your own markdown content
 
 The sections `start`, `about`, `deals`, `services`, `contact`, `header`, `footer`, `go_back` are shown if the corrosponding parameter is set. The custom content is shown if the parameter `custom` is set to `true`.
+
+If you want to use `p01-contact` you may have to place a symlink from `assets/contact.css` to `plugins/PicoContact/style.css`, because Pico CMS restricts public access to `/plugins` by default.
+
+`assets/contact` is automatically included by this theme when using the contact form.
 
 **Used Meta Params:**
 
@@ -76,6 +81,7 @@ Section-specific Params:
     - `street` (str) - The street of the company.
     - `city` (str) - The city of the company.
     - `email` (str) - Email address of the company.
+    - `use-form` (bln) - True if you want to include a contact form (requires manual installation of `p01-contact`!)
     - `opening_label` (str) - Label for the opening hours.
     - `opening` (array) - max. two definitions of opening hours
         - `sel1` (str) - first selector (e.g. mon-fri)
