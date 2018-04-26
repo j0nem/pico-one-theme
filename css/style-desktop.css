@@ -233,11 +233,20 @@ header.small nav {
     max-width:370px;
 }
 #about .image-gallery img.small {
-    margin-right:3.5%;
-    margin-left:3.5%;
-    width:25%;
-    max-width:100px;
-    margin-top:7%;
+    width: 25%;
+    height: 25%;
+    margin: 3.5%;
+    margin-top: 5%;
+    max-width: 100px;
+    display: inline-block;
+}
+#about .image-gallery .lightbox .caption {
+    background: #fff;
+    color: #000;
+    display: table;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-top: 10px;
 }
 /* tablet small */
 @media screen and (max-width: 1080px) {
@@ -423,7 +432,7 @@ header.small nav {
 }
 #contact .email a {
     display:block;
-    width:fit-content;
+    display:table;
 }
 /* tablet small */
 @media screen and (max-width: 1080px) {

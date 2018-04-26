@@ -54,7 +54,10 @@ Section-specific Params:
 - `about` (array):
     - `title` (str) - The title of the about page
     - `big_img` (str) - URL to the main image file of the gallery
-    - `more_img` (array of str) - URLs to (up to 3) more images
+    - `more_img` (array) - Up to 3 more images
+        - `image` (str) - URL to the main image
+        - `thumb` (str) - URL to an square thumbnail of the image
+        - `caption` (str) - Caption of the image (shown in full screen)
     - `text` (array of str) - Paragraphs of the about text
 
 - `deals` (array):
