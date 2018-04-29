@@ -231,6 +231,7 @@ header.small nav {
 #about .image-gallery img.big {
     width: 90%;
     max-width:370px;
+    object-fit: contain;
 }
 #about .image-gallery img.small {
     width: 25%;
@@ -241,11 +242,8 @@ header.small nav {
     display: inline-block;
 }
 #about .image-gallery .lightbox .caption {
-    background: #fff;
-    color: #000;
-    display: table;
+    color: #fff;
     margin: 0 auto;
-    padding: 10px 20px;
     margin-top: 10px;
 }
 /* tablet small */
@@ -273,13 +271,38 @@ header.small nav {
 }
 .lightbox img {
     max-width: 90%;
-    max-height: 80%;
-    margin-top: 2%;
+    max-height: 75%;
+    margin-top: 60px;
     vertical-align: middle;
 }
 .lightbox:target {
     outline: none;
     display: block;
+}
+.lightbox a.next, .lightbox a.prev, .lightbox span.close {
+    font-size: 21pt;
+    color: #fff;
+    background: #0000002b;
+    display: inline-block;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 15px;
+}
+.lightbox a.prev {
+    margin-left: -65px;
+}
+.lightbox a.next {
+    margin-right: -65px;
+}
+.lightbox span.close {
+    background: transparent;
+    border: none;
+    position: absolute;
+    margin-left: -15px;
+    margin-top: 20px;
 }
 
 /* --- Deals section --- */

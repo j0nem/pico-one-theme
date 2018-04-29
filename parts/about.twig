@@ -8,6 +8,8 @@
       </a>
       <a href="#_" class="lightbox" id="lb-imgbig">
         <img src="{{ meta.about.big_img }}" itemscope itemtype="http://schema.org/ImageObject">
+        <span class="close" href="#_">🞩</span>
+        <object><a class="next" href="#lb-imgs0">🡲</a></object>
       </a>
 
       {% for id, elem in meta.about.more_img %}
@@ -17,7 +19,10 @@
         </a>
         
         <a href="#_" class="lightbox" id="lb-imgs{{ id }}">
-          <img class="big" src="{{ elem.image }}" itemscope itemtype="http://schema.org/ImageObject">
+          {% if meta.about.more_img[id - 1] is defined %}<object><a class="prev" href="#lb-imgs{{ id - 1 }}">🡰</a></object>{% else %}<object><a class="prev" href="#lb-imgbig">🡰</a></object>{% endif %}
+          <img src="{{ elem.image }}" itemscope itemtype="http://schema.org/ImageObject">
+          <span class="close" href="#_">🞩</span>
+          {% if meta.about.more_img[id + 1] is defined %}<object><a class="next" href="#lb-imgs{{ id + 1 }}">🡲</a></object>{% endif %}
           <p class="caption">{{ elem.caption }}</p>
         </a>
       {% endfor %}
