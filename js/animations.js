@@ -2,6 +2,7 @@ $(document).ready(function(){
     setMenuMode();
     smoothAnchorScroll();
     updateContactForm();
+    lightboxKeyNavigation();
 });
 
 $(window).scroll(function(e) {
@@ -55,6 +56,23 @@ function setMenuMode() {
         else {
             $(this).removeClass('active');
         }
+    });
+}
+
+function lightboxKeyNavigation() {
+    $('.lightbox').keydown(function(e) {
+        aPrev = $(this).find('a.prev');
+        aNext = $(this).find('a.next');
+
+        if(e.which == 37 && aPrev.attr('href')) {
+            location.hash = aPrev.attr('href');
+        }
+        if(e.which == 39 && aNext.attr('href')) {
+            location.hash = aNext.attr('href');
+        }
+        if(e.which == 27) { //esc
+            location.hash = '#_';
+        } 
     });
 }
 
