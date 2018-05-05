@@ -154,7 +154,7 @@ header.small nav {
     width:100%;
 }
 #start .content {
-    background: linear-gradient(#efefef 20%, #fff);
+    background: linear-gradient(#f7f1f1 20%, #fff);
     position:relative;
     text-align:center;
     height:calc(100vh - 235px);
@@ -333,12 +333,14 @@ header.small nav {
     padding:28px 0;
 }
 #deals .deal .reduced-by {
-    margin: 30px auto;
+    margin: -15px auto;
     padding: 10px 15px;
+    margin-bottom: 40px;
     background: #fff;
-    color: #c9352c;
-    width:90px;
+    color: #c9352d;
+    width: 90px;
     font-size: 17pt;
+    transform: rotate(-5deg);
 }
 
 /* --- Services section --- */
@@ -372,7 +374,7 @@ header.small nav {
 }
 #services .logo {
     display: inline-block;
-    width: 9%;
+    width: 8%;
     max-width: 115px;
     margin-right: 5%;
     vertical-align: middle;
