@@ -12,9 +12,9 @@
   <div class="nav-container">
     <nav id="mainNav" itemscope itemtype="http://schema.org/SiteNavigationElement">
       
-      {% if meta.about is defined %}<a href="#about">{{ meta.about.title }}</a>{% endif %}
-      {% if meta.deals is defined %}<a href="#deals">{{ meta.deals.title }}</a>{% endif %}
       {% if meta.services is defined %}<a href="#services">{{ meta.services.title }}</a>{% endif %}
+      {% if meta.deals is defined %}<a href="#deals">{{ meta.deals.title }}</a>{% endif %}
+      {% if meta.about is defined %}<a href="#about">{{ meta.about.title }}</a>{% endif %}
       {% if meta.contact is defined %}<a href="#contact">{{ meta.contact.title }}</a>{% endif %}
 
     </nav>
