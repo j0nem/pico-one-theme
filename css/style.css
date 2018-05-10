@@ -594,7 +594,7 @@ header.small nav {
 /* smartphone */
 @media screen and (max-width: 739px) {
     #contact .box {
-        width: 100%;
+        width: 80%;
         margin-bottom: 15px;
     }
     #contact .sel {
