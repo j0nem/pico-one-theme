@@ -16,7 +16,7 @@ section {
         margin-top: -160px;
     }
 }
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 739px) {
     section {
         padding-top: 80px;
         margin-top: -80px;
@@ -132,9 +132,9 @@ header.small nav {
     }
 }
 /* tablet small */
-@media screen and (max-width: 1080px) and (min-width: 800px){
+@media screen and (max-width: 1080px) and (min-width: 740px){
     header nav{
-        font-size: 21pt;
+        font-size: 20pt;
     }
     header.small {
         height: 160px;
@@ -142,6 +142,8 @@ header.small nav {
     header.small nav {
         position:relative;
         top: 0px;
+        right: auto;
+        font-size: 20pt;
     }
     header .logo-wrapper {
         text-align:center;
@@ -151,7 +153,7 @@ header.small nav {
     }
 }
 /* smartphone */
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 739px) {
     header nav {
         display:none;
     }
@@ -258,7 +260,7 @@ header.small nav {
     background-color:#98312b;
 }
 /* smartphone */
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 739px) {
     #start .content {
         margin-top: 80px;
         height: calc(100vh - 80px);
@@ -278,21 +280,28 @@ header.small nav {
 
 /* --- About section --- */
 
+#about h1 {
+    text-align: left;
+    position: relative;
+    left: calc(30% + 20px);
+    width: 60%;
+}
 #about .main-text {
-    display:inline-block;
-    width: 65%;
+    float: right;
+    width: 70%;
     vertical-align:top;
-    max-width:900px;
     text-align:left;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 #about h1, #deals h1, #services h1, #contact h1{
     font-weight: 300;
     margin-top:0;
 }
 #about .image-gallery {
-    display:inline-block;
-    width:25%;
-    margin-right:3%;
+    float: left;
+    width: 30%;
+    margin-top: 20px;
 }
 #about .image-gallery a {
     text-decoration:none;
@@ -315,11 +324,26 @@ header.small nav {
     margin: 0 auto;
     margin-top: 10px;
 }
-/* tablet small */
-@media screen and (max-width: 1080px) {
+#about .clear {
+    clear: both;
+}
+/* smartphone */
+@media screen and (max-width: 739px)  {
+    #about h1 {
+        text-align:center;
+        left: auto;
+        width: 100%;
+    }
     #about .image-gallery {
-        width: 30%;
-        margin-top: 72px;
+        float:none;
+        width: 100%;
+    }
+    #about .image-gallery .img-small {
+        margin: 15px;
+        margin-top: 20px;
+    }
+    #about .main-text {
+        width: 100%;
     }
 }
 
@@ -373,6 +397,12 @@ header.small nav {
     margin-left: -15px;
     margin-top: 20px;
 }
+/* smartphone */
+@media screen and (max-width: 739px) {
+    .lightbox img {
+        max-width: 63%;
+    }
+}
 
 /* --- Deals section --- */
 
@@ -411,6 +441,12 @@ header.small nav {
     font-size: 17pt;
     transform: rotate(-5deg);
 }
+/* smartphone */
+@media screen and (max-width: 739px) {
+    #deals .deal {
+        width: 70%;
+    }
+}
 
 /* --- Services section --- */
 
@@ -424,6 +460,9 @@ header.small nav {
     margin-bottom:20px;
     text-align:left;
 }
+#services .category .nowrap {
+    white-space: nowrap;
+}
 #services .category span {
     font-family: 'Merriweather', 'Times New Roman', serif;
     font-size:17pt;
@@ -431,6 +470,7 @@ header.small nav {
     display:inline-block;
     max-width:85%;
     vertical-align: bottom;
+    white-space:normal;
 }
 #services .category img {
     display:inline-block;
@@ -444,6 +484,7 @@ header.small nav {
 #services .logo {
     display: inline-block;
     width: 9%;
+    min-width: 70px;
     max-width: 115px;
     margin-right: 5%;
     vertical-align: middle;
@@ -467,6 +508,12 @@ header.small nav {
 @media screen and (max-width: 1080px) {
     #services .category {
         width: 45%;
+    }
+}
+/* smartphone */
+@media screen and (max-width: 739px) {
+    #services .category {
+        width: 85%;
     }
 }
 
@@ -544,6 +591,22 @@ header.small nav {
         margin-bottom: 7px;
     }
 }
+/* smartphone */
+@media screen and (max-width: 739px) {
+    #contact .box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #contact .sel {
+        font-style: italic;
+    }
+    #contact .val {
+        display:block;
+    }
+    #contact .hours1 {
+        margin-bottom: 10px;
+    }
+}
 
 /* Contact Form */
 
@@ -587,8 +650,14 @@ header.small nav {
     display: inline-block;
     text-align: center;
     bottom: 36px;
-    left: 505px;
+    left: 100%;
     text-decoration: none;
+}
+/* smartphone */
+@media screen and (max-width: 739px) {
+    #lb-contact .form-inside {
+        margin: 20px;
+    }
 }
 
 /* Map */

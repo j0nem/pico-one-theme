@@ -38,7 +38,7 @@ function smoothAnchorScroll() {
 }
 
 function setMenuMode() {
-    if($(window).scrollTop() > 300 && $(window).width() > 799) {
+    if($(window).scrollTop() > 300 && $(window).width() > 739) {
         $('header').addClass('small');
     } else {
         $('header').removeClass('small');

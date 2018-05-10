@@ -1,6 +1,9 @@
 <section id="about" itemscope itemtype="http://schema.org/AboutPage">
 
   <div class="inside">
+
+    <h1 itemprop="headline">{{ meta.about.title }}</h1>
+
     <div class="image-gallery" itemscope itemtype="http://schema.org/ImageGallery">
       
       <a href="#lb-imgbig">
@@ -29,11 +32,13 @@
     </div>
 
     <div class="main-text">
-      <h1 itemprop="headline">{{ meta.about.title }}</h1>
       {% for paragraph in meta.about.text %}
         <p>{{ paragraph }}</p>
       {% endfor %}
     </div>
+
+    <div class="clear"></div>
+  
   </div>
 
 </section>

@@ -9,8 +9,10 @@
       {% for key,category in meta.services.categories %}
 
         <div class="category {{ key }}">
-          <img src="{{ category.icon }}" width="50px">
-          <span class="headline">{{ category.title }}</span>
+          <div class="nowrap">
+            <img src="{{ category.icon }}" width="50px">
+            <span class="headline">{{ category.title }}</span>
+          </div>
           <ul itemscope itemtype="http://schema.org/ItemList">
           {% for el in category.items %}
             <li itemprop="itemListElement">{{ el }}</li>
