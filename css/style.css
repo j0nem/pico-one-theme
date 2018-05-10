@@ -1,5 +1,3 @@
-@media screen and (min-width: 800px) {
-
 /* --- General style --- */
 
 body {
@@ -127,7 +125,7 @@ header.small nav {
     }
 }
 /* tablet small */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1080px) and (min-width: 800px){
     header nav{
         font-size: 21pt;
     }
@@ -145,14 +143,45 @@ header.small nav {
         margin:0;
     }
 }
+/* smartphone */
+@media screen and (max-width: 799px) {
+    header nav {
+        display:none;
+    }
+    header {
+        height: 80px;
+    }
+    header .headline{
+        margin-top: 18px;
+    }
+    header h1, header h2 {
+        text-align:left;
+        margin-left: 85px;
+    }
+    header h1 {
+        font-size: 14pt;
+        margin-bottom: 6px;
+    }
+    header h2 {
+        font-size: 11pt;
+    }
+    header .logo-wrapper {
+        margin-left: 65px;
+    }
+    header .nav-container:before {
+        content: ' ';
+        background: url('../assets/menu.svg');
+        display:block;
+        width: 45px;
+        height: 45px;
+        position:absolute;
+        top: 14px;
+        left: 20px;
+    }
+}
 
 /* --- Start section --- */
 
-#start {
-    height:100vh;
-    max-height: 950px;
-    width:100%;
-}
 #start .content {
     background: linear-gradient(#f7f1f1 20%, #fff);
     position:relative;
@@ -205,6 +234,24 @@ header.small nav {
 }
 #start .emergency-number:hover{
     background-color:#98312b;
+}
+/* smartphone */
+@media screen and (max-width: 799px) {
+    #start .content {
+        margin-top: 80px;
+        height: calc(100vh - 80px);
+        max-height: 400px;
+    }
+    #start .image-container {
+        width: 90%;
+    }
+    #start .emergency-number {
+        font-size: 15pt;
+        padding: 10px 12px;
+        padding-left: 45px;
+        background-size: 25px;
+        background-position-x: 10px;
+    }
 }
 
 /* --- About section --- */
@@ -346,7 +393,7 @@ header.small nav {
 /* --- Services section --- */
 
 #services .inside{
-    border-top: 5px solid #c9352c;
+    border-bottom: 5px solid #c9352c;
 }
 #services .category {
     width:30%;
@@ -374,7 +421,7 @@ header.small nav {
 }
 #services .logo {
     display: inline-block;
-    width: 8%;
+    width: 9%;
     max-width: 115px;
     margin-right: 5%;
     vertical-align: middle;
@@ -585,5 +632,4 @@ footer nav a:hover {
     border-bottom: 3px solid #194871;
     color: #194871;
     text-align:center;
-}
 }
