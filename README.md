@@ -117,7 +117,7 @@ Notes:
 ------
 
 The used icons are taken from [Flaticon](https://flaticon.com) and licenced under the [CC 3.0-BY Licence](https://creativecommons.org/licenses/by/3.0/).
-The authors are [Zurb](http://www.zurb.com/), [Dave Gandy](http://fontawesome.io/), [Google](https://google.com) and [SimpleIcon](http://www.simpleicon.com/).
+The authors are [Zurb](http://www.zurb.com/), [Dave Gandy](http://fontawesome.io/), [Google](https://google.com), [SimpleIcon](http://www.simpleicon.com/) and [Chris Veigt](http://chrisveigt.com/).
 
 Internal notes:
 -------------------
