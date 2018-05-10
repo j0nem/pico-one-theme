@@ -16,6 +16,13 @@ section {
         margin-top: -160px;
     }
 }
+@media screen and (max-width: 799px) {
+    section {
+        padding-top: 80px;
+        margin-top: -80px;
+    }
+}
+
 section .inside {
     padding:40px 30px;
     text-align:center;
@@ -57,7 +64,7 @@ header nav {
     border-top: 3px solid #e0e0e0;
     transition: all 0.4s;
 }
-header nav a{
+header nav a {
     font-variant:small-caps;
     text-decoration:none;
     color:#272727;
@@ -168,8 +175,7 @@ header.small nav {
     header .logo-wrapper {
         margin-left: 65px;
     }
-    header .nav-container:before {
-        content: ' ';
+    header #nav-toggle {
         background: url('../assets/menu.svg');
         display:block;
         width: 45px;
@@ -177,6 +183,22 @@ header.small nav {
         position:absolute;
         top: 14px;
         left: 20px;
+    }
+    header .nav-container {
+        text-align:left;
+    }
+    header nav {
+        transition:none;
+        background: #fff;
+        margin-top: 19px;
+        padding: 20px 85px;
+        border-top: none;
+        box-shadow: 0 6px 9px -5px rgba(0,0,0,0.4);
+    }
+    header nav a {
+        display:block;
+        padding: 10px 0;
+        margin: 0;
     }
 }
 

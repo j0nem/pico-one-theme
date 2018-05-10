@@ -3,6 +3,7 @@ $(document).ready(function(){
     smoothAnchorScroll();
     updateContactForm();
     lightboxKeyNavigation();
+    toggleMobileMenu();
 });
 
 $(window).scroll(function(e) {
@@ -37,7 +38,7 @@ function smoothAnchorScroll() {
 }
 
 function setMenuMode() {
-    if($(window).scrollTop() > 300) {
+    if($(window).scrollTop() > 300 && $(window).width() > 799) {
         $('header').addClass('small');
     } else {
         $('header').removeClass('small');
@@ -56,6 +57,15 @@ function setMenuMode() {
         else {
             $(this).removeClass('active');
         }
+    });
+}
+
+function toggleMobileMenu() {
+    $('header #nav-toggle').click(function(e) {
+        $('header nav').slideToggle(300);
+    });
+    $('header nav a').click(function(e) {
+        $('header nav').slideUp(300);
     });
 }
 
