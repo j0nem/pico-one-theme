@@ -5,6 +5,9 @@ $(document).ready(function(){
     lightboxKeyNavigation();
     toggleMobileMenu();
 });
+$(window).resize(function(e) {
+    setMenuMode();
+});
 
 $(window).scroll(function(e) {
     setMenuMode();
@@ -43,6 +46,12 @@ function setMenuMode() {
     } else {
         $('header').removeClass('small');
     }
+    if($(window).width() > 739) {
+        $('header nav').show();
+    }
+    else {
+        $('header nav').hide();
+    }
     //mark the section menu, which is currently mainly in viewport
     $('header nav a').each(function(i) {
         section = $(this.hash);
@@ -61,12 +70,14 @@ function setMenuMode() {
 }
 
 function toggleMobileMenu() {
-    $('header #nav-toggle').click(function(e) {
-        $('header nav').slideToggle(300);
-    });
-    $('header nav a').click(function(e) {
-        $('header nav').slideUp(300);
-    });
+    if ($(window).width() < 740) {
+        $('header #nav-toggle').click(function(e) {
+            $('header nav').slideToggle(300);
+        });
+        $('header nav a').click(function(e) {
+            $('header nav').slideUp(300);
+        });
+    }
 }
 
 function lightboxKeyNavigation() {

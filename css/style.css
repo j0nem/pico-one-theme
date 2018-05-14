@@ -32,6 +32,15 @@ section .inside {
     width:100%;
     position:relative;
 }
+/* smartphone small */
+@media screen and (max-width: 359px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    body {
+        font-size: 13pt;
+    }
+}
 
 /* --- Header and menu --- */
 
@@ -72,7 +81,7 @@ header nav a {
     transition: color 0.4s;
 }
 header nav a:hover {
-    color: #727272;
+    color: #a25b57;
 }
 header nav a:first-child {
     margin-left:0;
@@ -82,6 +91,9 @@ header nav a.active {
 }
 header .headline {
     margin-top: 30px;
+} 
+header .headline a {
+    text-decoration: none;
 }
 header h1 {
     font-family: 'Merriweather', 'Times New Roman', serif;
@@ -161,18 +173,18 @@ header.small nav {
         height: 80px;
     }
     header .headline{
-        margin-top: 18px;
+        margin-top: 21px;
     }
     header h1, header h2 {
         text-align:left;
         margin-left: 85px;
     }
     header h1 {
-        font-size: 14pt;
+        font-size: 13pt;
         margin-bottom: 6px;
     }
     header h2 {
-        font-size: 11pt;
+        font-size: 10pt;
     }
     header .logo-wrapper {
         margin-left: 65px;
@@ -183,7 +195,7 @@ header.small nav {
         width: 45px;
         height: 45px;
         position:absolute;
-        top: 14px;
+        top: 17px;
         left: 20px;
     }
     header .nav-container {
@@ -201,6 +213,29 @@ header.small nav {
         display:block;
         padding: 10px 0;
         margin: 0;
+    }
+}
+/* smartphone small */
+@media screen and (max-width: 359px) {
+    header #nav-toggle {
+        width: 30px;
+        height: 30px;
+        top: 23px;
+        left: 14px;
+    }
+    header h1 {
+        font-size: 12.4pt;
+    }
+    header h2 {
+        font-size: 9.4pt;
+    }
+    header h1, header h2 {
+        margin-left: 60px;
+    }
+    header nav {
+        padding-left: 57px;
+        padding-top: 0;
+        font-size: 20pt;
     }
 }
 
@@ -385,10 +420,10 @@ header.small nav {
     margin: 0 15px;
 }
 .lightbox a.prev {
-    margin-left: -65px;
+    margin-left: -65px !important;
 }
 .lightbox a.next {
-    margin-right: -65px;
+    margin-right: -65px !important;
 }
 .lightbox span.close {
     background: transparent;
@@ -401,6 +436,16 @@ header.small nav {
 @media screen and (max-width: 739px) {
     .lightbox img {
         max-width: 63%;
+    }
+}
+/* smartphone small */
+@media screen and (max-width: 359px) {
+    .lightbox a.next, .lightbox a.prev, .lightbox span.close {
+        font-size: 18pt;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 7px;
     }
 }
 
@@ -419,6 +464,7 @@ header.small nav {
     text-align:center;
     vertical-align:top;
     margin-right:1%;
+    margin-bottom: 20px;
 }
 #deals .deal .icon-wrapper {
     width:120px;
@@ -516,6 +562,15 @@ header.small nav {
         width: 85%;
     }
 }
+/* smartphone small */
+@media screen and (max-width: 359px) {
+    #services .category {
+        width: 100%;
+    }
+    #services .category span {
+        font-size: 16pt;
+    }
+}
 
 /* --- Contact section --- */
 
@@ -607,6 +662,15 @@ header.small nav {
         margin-bottom: 10px;
     }
 }
+/* smartphone small */
+@media screen and (max-width: 359px) {
+    #contact .inside {
+        font-size: 13pt;
+    }
+    #contact .box {
+        width: 100%;
+    }
+}
 
 /* Contact Form */
 
@@ -620,6 +684,9 @@ header.small nav {
 }
 #lb-contact label{
     margin-bottom: 10px;
+}
+#lb-contact .checkbox label {
+    font-size: 10pt;
 }
 #lb-contact input:focus, #lb-contact textarea:focus {
     box-shadow: none;
