@@ -41,6 +41,10 @@ section .inside {
         font-size: 13pt;
     }
 }
+#about h1, #deals h1, #services h1, #contact h1, #custom.embedded h1{
+    font-weight: 300;
+    margin-top:0;
+}
 
 /* --- Header and menu --- */
 
@@ -328,10 +332,6 @@ header.small nav {
     text-align:left;
     padding: 0 20px;
     box-sizing: border-box;
-}
-#about h1, #deals h1, #services h1, #contact h1{
-    font-weight: 300;
-    margin-top:0;
 }
 #about .image-gallery {
     float: left;
@@ -777,17 +777,21 @@ footer nav a:hover {
 .go-back a:hover {
     background: #1a5a90;
 }
-#custom .inside{
+#custom.single .inside{
     width: 70%;
     margin: 0 auto;
     padding-top: 0;
     text-align: left;
     margin-bottom: 40px;
 }
-#custom h1 {
+#custom.single h1 {
     margin-bottom: 40px;
     padding-bottom: 13px;
     border-bottom: 3px solid #194871;
     color: #194871;
     text-align:center;
+}
+#custom.red .inside {
+    background: #c9352c;
+    color: #fff;
 }

@@ -25,7 +25,7 @@ How to use
 - `footer` - Copyright and footer links, e.g. to another page
 - `custom` - Add your own markdown content
 
-The sections `start`, `about`, `deals`, `services`, `contact`, `header`, `footer`, `go_back` are shown if the corrosponding parameter is set. The custom content is shown if the parameter `custom` is set to `true`.
+The sections `start`, `about`, `deals`, `services`, `contact`, `header`, `footer`, `go_back` and `custom` are shown if the corrosponding parameter is set.
 
 If you want to use `p01-contact` you may have to place a symlink from `assets/contact.css` to `plugins/PicoContact/style.css`, because Pico CMS restricts public access to the folder `plugins` by default.
 `assets/contact.css` is automatically included by the template of this theme when using the contact form.
@@ -112,6 +112,11 @@ Section-specific Params:
 
 - `go_back` (array):
     - `label` (str): Label for the "Go back" link
+
+- `custom` (string): 
+    - `embedded` (if the section is embedded in a page with other sections) 
+    - or `single` (if the custom section is the only one on the page)
+    - You can combine both params with `red` (red background) and `white` (white background) using a space (e.g. `embedded red`).
 
 Notes:
 ------
