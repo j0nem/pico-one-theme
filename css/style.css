@@ -770,14 +770,15 @@ footer nav a:hover {
 }
 .go-back a{
     color: #fff;
-    background: #194871;
+    background:#194871 url('../assets/arrow-left.svg') 8px/20px no-repeat;
     padding: 7px 15px;
+    padding-left: 35px;
     border-radius: 20px;
     text-decoration: none;
     transition: background 0.3s;
 }
 .go-back a:hover {
-    background: #1a5a90;
+    background-color: #1a5a90;
 }
 #custom.single .inside{
     width: 70%;
