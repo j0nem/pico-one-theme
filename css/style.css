@@ -174,8 +174,8 @@ header.small nav {
         display:none; 
         transition:none;
         background: #fff;
-        margin-top: 13px;
-        padding: 0 77px;
+        margin-top: 12px;
+        padding: 5px 77px;
         padding-bottom: 20px;
         border-top: none;
         box-shadow: 0 6px 9px -5px rgba(0,0,0,0.4);
