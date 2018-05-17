@@ -18,8 +18,8 @@ section {
 }
 @media screen and (max-width: 739px) {
     section {
-        padding-top: 80px;
-        margin-top: -80px;
+        padding-top: 68px;
+        margin-top: -68px;
     }
 }
 
@@ -174,22 +174,22 @@ header.small nav {
         display:none; 
         transition:none;
         background: #fff;
-        margin-top: 19px;
-        padding: 0 85px;
+        margin-top: 13px;
+        padding: 0 77px;
         padding-bottom: 20px;
         border-top: none;
         box-shadow: 0 6px 9px -5px rgba(0,0,0,0.4);
         font-size: 18pt;
     }
     header {
-        height: 80px;
+        height: 68px;
     }
     header .headline{
-        margin-top: 21px;
+        margin-top: 15px;
     }
     header h1, header h2 {
         text-align:left;
-        margin-left: 85px;
+        margin-left: 77px;
     }
     header h1 {
         font-size: 13pt;
@@ -204,11 +204,11 @@ header.small nav {
     header #nav-toggle {
         background: url('../assets/menu.svg');
         display:block;
-        width: 37px;
-        height: 37px;
+        width: 32px;
+        height: 32px;
         position:absolute;
-        top: 20px;
-        left: 24px;
+        top: 18px;
+        left: 22px;
     }
     header .nav-container {
         text-align:left;
@@ -224,7 +224,7 @@ header.small nav {
     header #nav-toggle {
         width: 30px;
         height: 30px;
-        top: 23px;
+        top: 18px;
         left: 14px;
     }
     header h1 {
@@ -300,8 +300,8 @@ header.small nav {
 /* smartphone */
 @media screen and (max-width: 739px) {
     #start .content {
-        margin-top: 80px;
-        height: calc(100vh - 80px);
+        margin-top: 68px;
+        height: calc(100vh - 68px);
         max-height: 400px;
     }
     #start .image-container {
