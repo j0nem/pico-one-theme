@@ -413,29 +413,26 @@ header.small nav {
     display: block;
 }
 .lightbox a.next, .lightbox a.prev, .lightbox span.close {
-    font-size: 21pt;
-    color: #fff;
-    background: #0000002b;
     display: inline-block;
-    border-radius: 25px;
-    border: 1px solid #fff;
     width: 45px;
     height: 45px;
-    line-height: 45px;
-    margin: 0 15px;
+    margin: -30px 15px;
 }
 .lightbox a.prev {
     margin-left: -65px !important;
+    background: url('../assets/arrow-left.svg') center/40px no-repeat;
 }
 .lightbox a.next {
     margin-right: -65px !important;
+    background: url('../assets/arrow-right.svg') center/40px no-repeat;
 }
 .lightbox span.close {
     background: transparent;
     border: none;
     position: absolute;
-    margin-left: -15px;
-    margin-top: 20px;
+    margin-left: -15px !important;
+    margin-top: 20px !important; 
+    background: url('../assets/cross.svg') center/20px no-repeat;
 }
 /* smartphone */
 @media screen and (max-width: 739px) {
@@ -450,7 +447,7 @@ header.small nav {
         width: 40px;
         height: 40px;
         line-height: 40px;
-        margin: 0 7px;
+        margin: -35px 4px;
     }
 }
 
