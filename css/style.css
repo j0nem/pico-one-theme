@@ -171,7 +171,15 @@ header.small nav {
 /* smartphone */
 @media screen and (max-width: 739px) {
     header nav {
-        display:none;
+        display:none; 
+        transition:none;
+        background: #fff;
+        margin-top: 19px;
+        padding: 0 85px;
+        padding-bottom: 20px;
+        border-top: none;
+        box-shadow: 0 6px 9px -5px rgba(0,0,0,0.4);
+        font-size: 18pt;
     }
     header {
         height: 80px;
@@ -196,22 +204,14 @@ header.small nav {
     header #nav-toggle {
         background: url('../assets/menu.svg');
         display:block;
-        width: 45px;
-        height: 45px;
+        width: 37px;
+        height: 37px;
         position:absolute;
-        top: 17px;
-        left: 20px;
+        top: 20px;
+        left: 24px;
     }
     header .nav-container {
         text-align:left;
-    }
-    header nav {
-        transition:none;
-        background: #fff;
-        margin-top: 19px;
-        padding: 20px 85px;
-        border-top: none;
-        box-shadow: 0 6px 9px -5px rgba(0,0,0,0.4);
     }
     header nav a {
         display:block;
@@ -237,9 +237,8 @@ header.small nav {
         margin-left: 60px;
     }
     header nav {
-        padding-left: 57px;
-        padding-top: 0;
-        font-size: 20pt;
+        padding-left: 60px;
+        font-size: 16pt;
     }
 }
 
@@ -309,11 +308,17 @@ header.small nav {
         width: 90%;
     }
     #start .emergency-number {
-        font-size: 15pt;
+        font-size: 14pt;
         padding: 10px 12px;
         padding-left: 45px;
         background-size: 25px;
         background-position-x: 10px;
+    }
+}
+/* smartphone small */
+@media screen and (max-width: 359px) {
+    #start .emergency-number {
+        font-size: 12pt;
     }
 }
 
