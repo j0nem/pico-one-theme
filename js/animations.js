@@ -41,12 +41,12 @@ function smoothAnchorScroll() {
 }
 
 function setMenuMode() {
-    if($(window).scrollTop() > 300 && $(window).width() > 739) {
+    if($(window).scrollTop() > 300 && $(window).outerWidth() > 739) {
         $('header').addClass('small');
     } else {
         $('header').removeClass('small');
     }
-    if($(window).width() > 739) {
+    if($(window).outerWidth() > 739) {
         $('header nav').show();
     }
     else {
