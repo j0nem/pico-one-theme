@@ -7,10 +7,17 @@
     <div class="image-gallery" itemscope itemtype="http://schema.org/ImageGallery">
       
       <a href="#lb-imgbig">
-        <img class="big" src="{{ meta.about.big_img.image }}" alt="{{ meta.about.big_img.caption }}" itemscope itemtype="http://schema.org/ImageObject"><br />
+        <picture itemscope itemtype="http://schema.org/ImageObject">
+          <source srcset="{{ meta.about.big_img.thumb }}.webp" type="image/webp">
+          <img src="{{ meta.about.big_img.thumb }}.jpg" class="big" alt="{{ meta.about.big_img.caption }}">
+        </picture>
+        <br />
       </a>
       <a href="#_" class="lightbox" id="lb-imgbig">
-        <img src="{{ meta.about.big_img.image }}" alt="{{ meta.about.big_img.caption }}" itemscope itemtype="http://schema.org/ImageObject">
+        <picture itemscope itemtype="http://schema.org/ImageObject">
+          <source srcset="{{ meta.about.big_img.image }}.webp" type="image/webp">
+          <img src="{{ meta.about.big_img.image }}" alt="{{ meta.about.big_img.caption }}">
+        </picture>
         <span class="close" href="#_"></span>
         <object><a class="next" href="#lb-imgs0"></a></object>
       </a>
@@ -18,12 +25,18 @@
       {% for id, elem in meta.about.more_img %}
       
         <a href="#lb-imgs{{ id }}">
-          <img class="small" src="{{ elem.thumb }}" alt="{{ elem.caption }}" itemscope itemtype="http://schema.org/ImageObject" />
+          <picture itemscope itemtype="http://schema.org/ImageObject">
+            <source srcset="{{ elem.thumb }}.webp" type="image/webp">
+            <img src="{{ elem.thumb }}" class="small" alt="{{ elem.caption }}">
+          </picture>
         </a>
         
         <a href="#_" class="lightbox" id="lb-imgs{{ id }}">
           {% if meta.about.more_img[id - 1] is defined %}<object><a class="prev" href="#lb-imgs{{ id - 1 }}"></a></object>{% else %}<object><a class="prev" href="#lb-imgbig"></a></object>{% endif %}
-          <img src="{{ elem.image }}" alt="{{ elem.caption }}" itemscope itemtype="http://schema.org/ImageObject">
+          <picture itemscope itemtype="http://schema.org/ImageObject">
+            <source srcset="{{ elem.image }}.webp" type="image/webp">
+            <img src="{{ elem.image }}" alt="{{ elem.caption }}">
+          </picture>
           <span class="close" href="#_"></span>
           {% if meta.about.more_img[id + 1] is defined %}<object><a class="next" href="#lb-imgs{{ id + 1 }}"></a></object>{% endif %}
           <p class="caption">{{ elem.caption }}</p>

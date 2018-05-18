@@ -10,7 +10,7 @@
 
         <div class="category {{ key }}">
           <div class="nowrap">
-            <img src="{{ category.icon }}" width="50px">
+            <img src="{{ category.icon }}" width="50px" alt="{{ category.icon_alt }}">
             <span class="headline">{{ category.title }}</span>
           </div>
           <ul>
@@ -28,10 +28,16 @@
       
       {% for logo in meta.services.logos %}
       
-        <a href="{{ logo.link }}" target="_blank">
+        <a href="{{ logo.link }}" target="_blank" rel="noopener">
           <div class="logo" itemscope itemtype="http://schema.org/ImageObject">
-            <img class="sw" src="assets/{{ logo.image }}_sw.png" alt="{{ logo.name }}">
-            <img class="cl" src="assets/{{ logo.image }}_cl.png" alt="{{ logo.name }}">
+            <picture itemscope itemtype="http://schema.org/ImageObject">
+              <source srcset="assets/{{ logo.image }}_sw.webp" type="image/webp">
+              <img class="sw" src="assets/{{ logo.image }}_sw.png" alt="{{ logo.name }}">
+            </picture>
+            <picture itemscope itemtype="http://schema.org/ImageObject">
+              <source srcset="assets/{{ logo.image }}_cl.webp" type="image/webp">
+              <img class="cl" src="assets/{{ logo.image }}_cl.png" alt="{{ logo.name }}">
+            </picture>
           </div>
         </a>
 
