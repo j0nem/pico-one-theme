@@ -225,8 +225,8 @@ header.small nav {
     header #nav-toggle {
         width: 30px;
         height: 30px;
-        top: 18px;
-        left: 14px;
+        top: 3px;
+        left: 2px;
     }
     header h1 {
         font-size: 12.4pt;
