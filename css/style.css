@@ -45,6 +45,10 @@ section .inside {
     font-weight: 300;
     margin-top:0;
 }
+a[href$=".pdf"] {
+    background: url('../assets/pdf.svg') left/15px no-repeat;
+    padding-left: 25px;
+}
 
 /* --- Header and menu --- */
 
@@ -781,13 +785,18 @@ footer nav a:hover {
 .go-back a:hover {
     background-color: #1a5a90;
 }
+#custom img {
+    width: 450px;
+    max-width: 100%;
+    margin: 20px 0;
+}
 #custom.single .inside{
     width: 70%;
     margin: 0 auto;
     padding-top: 0;
-    text-align: left;
     margin-bottom: 40px;
     word-break: break-word;
+    text-align:left;
 }
 #custom.single h1 {
     margin-bottom: 40px;
@@ -795,6 +804,19 @@ footer nav a:hover {
     border-bottom: 3px solid #194871;
     color: #194871;
     text-align:center;
+}
+#custom.grey .inside{
+    background-color: #3f4d56;
+    color: #fff;
+}
+#custom.grey a{
+    color: #fff;
+    text-decoration:none;
+    border-bottom: 1px solid #6b6b6b;
+    transition: border-color 0.3s;
+}
+#custom.grey a:hover {
+    border-color: #fff;
 }
 #custom.red .inside {
     background: #c9352c;
