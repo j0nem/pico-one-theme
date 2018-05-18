@@ -4,6 +4,7 @@ $(document).ready(function(){
     updateContactForm();
     lightboxKeyNavigation();
     toggleMobileMenu();
+    setJsMode();
 });
 $(window).resize(function(e) {
     setMenuMode();
@@ -12,6 +13,11 @@ $(window).resize(function(e) {
 $(window).scroll(function(e) {
     setMenuMode();
 });
+
+function setJsMode() {
+    $('html').removeClass('no-js')
+    $('html').addClass('js');
+}
 
 /** 
  * Smooth scrolling with focus management
