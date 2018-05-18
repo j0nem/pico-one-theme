@@ -504,7 +504,7 @@ header.small nav {
 /* --- Services section --- */
 
 #services .inside{
-    border-bottom: 5px solid #c9352c;
+    border-bottom: 10px solid #c9352c;
 }
 #services .category {
     width:30%;
