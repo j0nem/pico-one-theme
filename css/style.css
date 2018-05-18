@@ -739,7 +739,7 @@ header.small nav {
 /* --- Footer --- */
 
 footer {
-    background: #313131;
+    background: #171717;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -752,14 +752,14 @@ footer nav {
     display:inline-block;
 }
 footer nav a{
-    color: #c9352c;
+    color: #fff;
     text-decoration:none;
     margin-right: 10px;
-    border-bottom: 1px solid transparent;
+    border-bottom: 1px solid #6b6b6b;
     transition: border 0.3s;
 }
 footer nav a:hover {
-    border-color: #c9352c;
+    border-color: #fff;
 }
 
 /* --- Custom section --- */
