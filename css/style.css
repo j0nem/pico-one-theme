@@ -419,7 +419,7 @@ header.small nav, .no-js header nav{
     text-align: center;
     top: 0;
     left: 0;
-    background: #000000cc;
+    background: rgba(0,0,0,0.8);
     overflow-y: auto;
 }
 .lightbox img {
