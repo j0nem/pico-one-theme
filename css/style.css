@@ -795,7 +795,7 @@ footer nav a:hover {
     margin: 0 auto;
     padding-top: 0;
     margin-bottom: 40px;
-    word-break: break-word;
+    hyphens: auto;
     text-align:left;
 }
 #custom.single h1 {
