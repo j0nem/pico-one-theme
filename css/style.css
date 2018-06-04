@@ -842,3 +842,6 @@ footer nav a:hover {
     background: #c9352c;
     color: #fff;
 }
+#custom .gap {
+    height: 12px;
+}
