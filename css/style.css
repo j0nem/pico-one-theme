@@ -274,18 +274,13 @@ header.small nav, .no-js header nav{
 }
 #start .image-container {
     position:absolute;
-    top: 33%;
+    top: 27%;
     left:50%;
     margin-right:-50%;
     transform: translate(-50%,-33%);
-    width: 55%;
+    width: 50%;
     animation-name: flying-airplane;
     animation-duration: 4s;
-}
-@media screen and (max-width: 1230px) {
-    #start .image-container {
-        width: 75%;
-    }
 }
 @keyframes flying-airplane {
     from { left: -40% }
@@ -297,11 +292,26 @@ header.small nav, .no-js header nav{
 }
 #start .number-container {
     position:absolute;
-    top: 82%;
+    top: 69%;
     left:50%;
     margin-right:-50%;
     transform: translate(-50%,-82%);
 }
+
+#start .efre {
+    position:absolute;
+    top:90%;
+    left:50%;
+    margin-right:-50%;
+    transform: translate(-50%,-82%);
+    width: 320px;
+}
+
+#start .efre img {
+    width: 100%;
+    height: auto;
+}
+
 #start .emergency-number {
     position:relative;
     display:inline-block;
@@ -317,6 +327,18 @@ header.small nav, .no-js header nav{
 #start .emergency-number:hover{
     background-color:#98312b;
 }
+@media screen and (max-width: 1230px) {
+    #start .image-container {
+        width: 68%;
+    }
+    #start .number-container {
+        top: 68%;
+    }
+    #start .emergency-number {
+        font-size: 22pt;
+    }
+}
+
 /* smartphone */
 @media screen and (max-width: 739px) {
     #start .content, .no-js #start .content{
@@ -333,6 +355,11 @@ header.small nav, .no-js header nav{
         padding-left: 45px;
         background-size: 25px;
         background-position-x: 10px;
+    }
+
+    #start .efre {
+        width: 270px;
+        top: 95%;
     }
 }
 /* smartphone small */
@@ -685,7 +712,7 @@ header.small nav, .no-js header nav{
     }
 }
 /* smartphone small */
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 375px) {
     #contact .inside {
         font-size: 13pt;
     }
@@ -799,6 +826,13 @@ footer nav a:hover {
 }
 .go-back a:hover {
     background-color: #1a5a90;
+}
+#custom .inside-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+#custom .inside-content p, #custom .inside-content h2 {
+    text-align: left;
 }
 #custom img {
     width: 450px;

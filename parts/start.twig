@@ -10,6 +10,16 @@
       <a class="emergency-number" href="tel:{{ meta.contact.phone1.number_real }}">{{ meta.contact.phone1.label }}: {{ meta.contact.phone1.number_show }}</a>
     </div>
 
+    <div class="efre">
+      {% for page in pages %}
+        {% if page.id == 'efre-info' %}
+          <a href="{{ page.url }}">
+            <img src="themes/one/assets/efre-logo.png" alt="Europäische Union, Förderung durch EFRE" />
+          </a>
+        {% endif %}
+      {% endfor %}
+    </div>
+
   </div>
 
 </section>
