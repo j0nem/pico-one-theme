@@ -45,21 +45,15 @@
       <div class="form-inside">
         <a href="#_" class="close">X</a>
         <h1>{{ meta.contact.form_title }}</h1>
-        {{ contact() }}
+        {{ contact()|raw }}
       </div>
     </div>
   {% endif %}
-  {% if meta.contact.gmaps_api_key %}
+  {% if meta.contact.maps_image %}
     <div class="map">
-
-      <iframe title="Google Maps"
-        height="350"
-        frameborder="0" style="border:0"
-        allowfullscreen
-        src="https://www.google.com/maps/embed/v1/place?key={{ meta.contact.gmaps_api_key }}
-          &q={{ meta.title|url_encode }}+{{ meta.contact.street|url_encode }}+{{ meta.contact.city|url_encode }}" allowfullscreen>
-      </iframe>
-
+      <a href="{{meta.contact.maps_link}}" target="_blank">
+        <img src="assets/{{meta.contact.maps_image}}.png" alt="Karte Fliegender Schlüsseldienst">
+      </a>
     </div>
   {% endif %}
 </section>
