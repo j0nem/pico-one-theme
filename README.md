@@ -84,7 +84,8 @@ Section-specific Params:
     - `city` (str) - The city of the company.
     - `email` (str) - Email address of the company.
     - `use_form` (bln) - True if you want to include a contact form (requires manual installation of `p01-contact`!)
-    - `gmaps_api_key` (str) - Your API Key for the [Google Maps Embed API](https://developers.google.com/maps/documentation/embed/guide), leave empty if you want to disable the map
+    - `maps_image` (str) - Name of the maps image file in `assets` (`<image>.png` is needed)
+    - `maps_link` (str) - Link that the maps image should refer to
     - `opening_label` (str) - Label for the opening hours.
     - `opening` (array) - max. two definitions of opening hours
         - `sel1` (str) - first selector (e.g. mon-fri)
